@@ -1,0 +1,3 @@
+[submodule "lib/browser-require"]
+	path = lib/browser-require
+	url = git@github.com:marcuswestin/browser-require.git
