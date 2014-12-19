@@ -1,11 +1,22 @@
 {
   "name": "caret-position",
-  "main": "caret-position.js",
+  "main": "index.js",
+  "files": [
+    "index.js",
+    "set.js",
+    "get.js"
+  ],
+  "scripts": {
+    "test": "node test.js",
+    "build": "browserify index.js --standalone caretPosition > caret-position.js"
+  },
   "description": "Get and set the user's caret/selection on input/textarea elements",
   "version": "0.0.1",
   "homepage": "https://github.com/marcuswestin/caret-position.js",
   "author": "Marcus Westin <narcvs@gmail.com> (http://marcuswest.in)",
-  "contributors": [],
+  "contributors": [
+    "Deema Ywanow <dfcreative@gmail.com> (http://github.com/dfcreative)"
+  ],
   "repository": {
     "type": "git",
     "url": "git://github.com/marcuswestin/caret-position.git"
