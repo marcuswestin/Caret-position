@@ -56,8 +56,8 @@ module.exports = function (input) {
 module.exports = caret;
 
 function caret(a,b,c){
-	if (b !== undefined) return get(a);
-	return set(a,b,c);
+	if (b !== undefined) return caret.get(a);
+	return caret.set(a,b,c);
 };
 
 caret.get = require('./get');
