@@ -1,10 +1,45 @@
 <!doctype html>
 <html>
 <head>
-	<script src="./lib/browser-require/require.js" main="./test" id="browser-require"></script>
 </head>
 <body>
 	<input type="text" id="textInput"></input>
 	<textarea id="textArea"></textarea>
+	
+	<script src="./caret-position.js"></script>
+	<script>
+	function assert(truthy, message) {
+		if (truthy) { return }
+		alert("Failed assert: " + message)
+	}
+
+	function test(input) {
+		caretPosition.set(input, 1)
+		var position = caretPosition.get(input)
+		var message = 'get/set position 1'
+		assert(position.start == 1, message)
+		assert(position.end == 1, message)
+		assert(position.caret == 1, message)
+		
+		caretPosition.set(input, 1, 3)
+		var position = caretPosition.get(input)
+		console.log(position)
+		var message = 'get/set position 1,3'
+		assert(position.start == 1, message)
+		assert(position.end == 3, message)
+		assert(position.caret == 3, message)
+	}
+
+	window.onload = function() {
+		var textInput = document.getElementById('textInput'),
+			textArea = document.getElementById('textArea'),
+			testText = 'lorem ipsum dolores samblum dictatum'
+		
+		textInput.value = textArea.value = testText
+		
+		test(textInput)
+		test(textArea)
+	}
+	</script>
 </body>
 </html>

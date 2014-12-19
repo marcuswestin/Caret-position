@@ -1,0 +1,26 @@
+{
+  "name": "caret-position",
+  "main": "caret-position.js",
+  "description": "Get and set the user's caret/selection on input/textarea elements",
+  "version": "0.0.1",
+  "homepage": "https://github.com/marcuswestin/caret-position.js",
+  "author": "Marcus Westin <narcvs@gmail.com> (http://marcuswest.in)",
+  "contributors": [],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/marcuswestin/caret-position.git"
+  },
+  "bugs": {
+    "url": "http://github.com/marcuswestin/caret-position/issues"
+  },
+  "engines": {
+    "browser": "*",
+    "node": "*"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://raw.github.com/marcuswestin/caret-position/master/caret-position"
+    }
+  ]
+}
