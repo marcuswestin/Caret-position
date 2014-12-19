@@ -7,8 +7,11 @@
     "get.js"
   ],
   "scripts": {
-    "test": "node test.js",
+    "test": "test.html",
     "build": "browserify index.js --standalone caretPosition > caret-position.js"
+  },
+  "devDependencies": {
+    "browserify": ">=7.0.0"
   },
   "description": "Get and set the user's caret/selection on input/textarea elements",
   "version": "0.0.1",
