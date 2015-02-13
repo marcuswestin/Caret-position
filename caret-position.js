@@ -1,12 +1,24 @@
-;(function(win){
-	var caretPosition = {
+"use strict"
+// Module export pattern from
+// https://github.com/umdjs/umd/blob/master/returnExports.js
+;(function (root, factory) {
+    if (typeof define === 'function' && define.amd) {
+        // AMD. Register as an anonymous module.
+        define([], factory);
+    } else if (typeof exports === 'object') {
+        // Node. Does not work with strict CommonJS, but
+        // only CommonJS-like environments that support module.exports,
+        // like Node.
+        module.exports = factory();
+    } else {
+        // Browser globals (root is window)
+        root.caretPosition = factory();
+  }
+}(this, function () {
+	return {
 		get: getPosition,
 		set: setPosition
 	}
-	
-	if (typeof module != 'undefined' && module.exports && this.module !== module) { module.exports = caretPosition }
-	else if (typeof define === 'function' && define.amd) { define(caretPosition) }
-	else { win.caretPosition = caretPosition }
 
 	// Adoption from code at http://blogs.nitobi.com/alexei/wp-content/uploads/2008/01/getcaretselection3.js
 	// This function will return the caret position in a text field
@@ -66,7 +78,6 @@
 			range.select()
 		}
 	}
-
-})(Function('return this')());
+}));
 
 
