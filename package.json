@@ -1,5 +1,5 @@
 {
-  "name": "caret-position",
+  "name": "caret-position2",
   "main": "index.js",
   "files": [
     "index.js",
@@ -13,9 +13,9 @@
   "devDependencies": {
     "browserify": ">=7.0.0"
   },
-  "description": "Get and set the user's caret/selection on input/textarea elements",
+  "description": "Manage caret/selection on input/textarea. Refactored caret-position.",
   "version": "0.0.1",
-  "homepage": "https://github.com/marcuswestin/caret-position.js",
+  "homepage": "https://github.com/kudago/caret-position.js",
   "author": "Marcus Westin <narcvs@gmail.com> (http://marcuswest.in)",
   "contributors": [
     "Deema Ywanov <dfcreative@gmail.com> (http://github.com/dfcreative)"
@@ -34,7 +34,7 @@
   "licenses": [
     {
       "type": "MIT",
-      "url": "https://raw.github.com/marcuswestin/caret-position/master/caret-position"
+      "url": "https://raw.github.com/kudago/caret-position/master/caret-position"
     }
   ]
 }
