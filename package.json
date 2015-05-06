@@ -14,7 +14,7 @@
     "browserify": ">=7.0.0"
   },
   "description": "Manage caret/selection on input/textarea. Refactored caret-position.",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "homepage": "https://github.com/kudago/caret-position.js",
   "author": "Marcus Westin <narcvs@gmail.com> (http://marcuswest.in)",
   "contributors": [
